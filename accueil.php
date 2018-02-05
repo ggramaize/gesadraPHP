@@ -1,8 +1,9 @@
 <?php
+include_once('./parametres.php');
 $page="";
 try
 {
-    $bdd = new PDO('mysql:host=localhost;dbname=gesadra;charset=utf8', 'root', '');
+    $bdd = new PDO( DB_PDO_DSN, DB_USERNAME, DB_PASSWORD);
 }
 catch(Exception $e)
 {
