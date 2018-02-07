@@ -107,57 +107,40 @@ if (isset($_POST['valider'])) {
 
 
 
-	if (!empty($_POST['nom'])) {
+	if (
+		!empty($_POST['nom']) &&
+		!empty($_POST['prenom']) &&
+		!empty($_POST['indicatif']) &&
+		!empty($_POST['fixe_perso']) &&
+		!empty($_POST['port_perso']) &&
+		!empty($_POST['mail_perso']) &&
+		!empty($_POST['fixe_pro']) &&
+		!empty($_POST['port_pro']) &&
+		!empty($_POST['mail_pro'])
+	) {
 
-		if (!empty($_POST['prenom'])) {
+		$nom_membre = ($_POST['nom']);
+		$prenom_membre = ($_POST['prenom']);
+		$indicatif_membre = ($_POST['indicatif']);
+		$tel_fixe_perso = ($_POST['fixe_perso']);
+		$tel_portable_perso = ($_POST['port_perso']);
+		$mail_perso = ($_POST['mail_perso']);
+		$tel_fixe_pro = ($_POST['fixe_pro']);
+		$tel_portable_pro = ($_POST['port_pro']);
+		$mail_pro = ($_POST['mail_pro']);
 
-			if (!empty($_POST['indicatif'])) {
+		nouveauMembre($bdd, $nom_membre, $prenom_membre, $indicatif_membre, $tel_fixe_perso, $tel_portable_perso, $mail_perso, $tel_fixe_pro, $tel_portable_pro, $mail_pro);
 
-				if (!empty($_POST['fixe_perso'])) {
-
-					if (!empty($_POST['port_perso'])) {
-
-						if (!empty($_POST['mail_perso'])) {
-
-							if (!empty($_POST['fixe_pro'])) {
-
-								if (!empty($_POST['port_pro'])) {
-
-									if (!empty($_POST['mail_pro'])) {
-
-										$nom_membre = ($_POST['nom']);
-										$prenom_membre = ($_POST['prenom']);
-										$indicatif_membre = ($_POST['indicatif']);
-										$tel_fixe_perso = ($_POST['fixe_perso']);
-										$tel_portable_perso = ($_POST['port_perso']);
-										$mail_perso = ($_POST['mail_perso']);
-										$tel_fixe_pro = ($_POST['fixe_pro']);
-										$tel_portable_pro = ($_POST['port_pro']);
-										$mail_pro = ($_POST['mail_pro']);
-
-
-										nouveauMembre($bdd, $nom_membre, $prenom_membre, $indicatif_membre, $tel_fixe_perso, $tel_portable_perso, $mail_perso, $tel_fixe_pro, $tel_portable_pro, $mail_pro);
-
-										$nom = "";
-										$prenom = "";
-										$indicatif = "";
-										$tel_fixe_perso = "";
-										$tel_port_perso = "";
-										$adresse_mail_perso = "";
-										$tel_fixe_pro = "";
-										$tel_port_pro = "";
-										$adresse_mail_pro = "";
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-
+		$nom = "";
+		$prenom = "";
+		$indicatif = "";
+		$tel_fixe_perso = "";
+		$tel_port_perso = "";
+		$adresse_mail_perso = "";
+		$tel_fixe_pro = "";
+		$tel_port_pro = "";
+		$adresse_mail_pro = "";
 	}
-
 	
 }
 
