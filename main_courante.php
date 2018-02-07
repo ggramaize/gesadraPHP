@@ -53,7 +53,7 @@ if (isset($_POST['valider'])) {
 	<head>
 		<title>Ajouter une main courante</title>
 		<meta charset="UTF-8">
-
+		<link rel="stylesheet" type="text/css" href="assets/style.css" >
 		<script type="text/javascript">
 			function TD(n){
 				return n.toString().replace(/^(\d)$/,'0$1')
@@ -87,63 +87,6 @@ if (isset($_POST['valider'])) {
 			}
 
 		</script>
-		<style type="text/css">
-			.table1
-			{
-			    border-collapse: collapse;
-			}
-
-			.td1, .th1
-			{
-			    border: 1px solid black;
-			}
-
-
-			.titre {
-				background-color: orange;
-				color: blue;
-				text-align: center;
-				font-weight: bold; 
-				font-size: 18px;
-			}
-
-			.prio_routine {
-				width: 100%;
-				color: black;
-				background-color: white;
-			}
-
-			.prio_urgent {
-				width: 100%;
-				color: blue;
-				background-color: white;
-			}
-
-			.prio_immediat {
-				width: 100%;
-				color: tomato;
-				background-color: white;
-			}
-
-			.prio_flash {
-				width: 100%;
-				color: red;
-				background-color: white;
-			}
-
-			.prio_sauvetage {
-				width: 100%;
-				color: black;
-				background-color: darksalmon;
-			}
-
-			.prio_absolue {
-				width: 100%;
-				color: black;
-				background-color: orangered;
-			}
-
-		</style>
 	</head>
 	<body>
 		<form method="POST">
