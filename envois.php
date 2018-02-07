@@ -83,6 +83,22 @@ function editMembreReseau($bdd, $indicatif, $alias_tactique, $operateur, $etat, 
                 ));
 }
 
+function editMembreReseauSiExiste( $rang) {
+
+	if (isset($_POST["$rang"])) {
+		$d = $rang;
+		$indicatif = ($_POST["indicatif_$rang"]);
+		$alias_tactique = ($_POST["alias_$rang"]);
+		$operateur = ($_POST["operateur_$rang"]);
+		$etat = ($_POST["etat_$rang"]);
+		
+		$commentaire = ($_POST["commentaire_$rang"]);
+
+		editMembreReseau($bdd, $indicatif, $alias_tactique, $operateur, $etat, $commentaire, $d);
+	}
+}
+
+
 function nouveauMembreReseau($bdd, $indicatif, $alias_tactique, $operateur, $etat, $commentaire){
     $req_nouveau_membre_reseau = $bdd->prepare('INSERT INTO membres_reseau (indicatif, alias_tactique, operateur, etat, commentaire) VALUES(:indicatif, :alias_tactique, :operateur, :etat, :commentaire)')or die(print_r($bdd->errorInfo()));
                 $req_nouveau_membre_reseau->execute(array(
