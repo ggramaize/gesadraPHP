@@ -39,47 +39,8 @@ elseif (isset($_POST['releve_sater'])) {
 <html>
 	<head>
 		<title>Bienvenue sur le GesADRA !</title>
-		<meta charset="UTF-8">
-		<style type="text/css">
-		.container_menu1{
-			margin: 10px;
-			margin-top: 25px;
-			position: absolute;
-			width: 32%;
-		}
-		.container_menu2{
-			margin: 10px;
-			margin-top: 25px;
-			position: absolute;
-			width: 62%;
-		}
-
-		.aff_heure{
-			font-size: 18px;
-			position: absolute;
-			left: 110px;
-			top: 5px;
-			font
-		}
-		.variable_session{
-			font-family: Courier;
-			font-type: monospace;
-		}
-		.tr_titre {
-
-		width: 100%;
-		}
-		.td_titre {
-
-		width: 100%;
-
-		}
-		.membres{
-			display: inline;
-		}
-
-		</style>
-
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="assets/style.css" />
 		<script type="text/javascript">
 			setInterval(function(){
 			document.getElementById('afficherheure').innerHTML = new Date().toLocaleTimeString(); //
@@ -91,19 +52,15 @@ elseif (isset($_POST['releve_sater'])) {
 		<table width="100%">
 			<tr>
 				<td width="35%">
-					<b><div id="afficherheure" class="aff_heure"></div></b>
+					<div id="afficherheure" class="aff_heure"></div>
 					<div class="container_menu1">
 						<table width="100%">
-							<tr class="tr_titre">
-								<td class="td_titre" colspan="2" style="background-color: orange;">
-									<div align="center">
-										<span style="font-size : 18px; color: blue;"><b>Informations</b></span>
-									</div>
-								</td>
+							<tr>
+								<td colspan="2" class="titre">Informations</td>
 							</tr>
 					
-							<tr class="tr_titre">
-								<td colspan="2" class="td_titre">
+							<tr>
+								<td colspan="2">
 									<b>Indicatif : </b>
 									<span class="variable_session"><?php echo $indicatif_station; ?></span>
 									<span style="float: right;">
@@ -113,30 +70,30 @@ elseif (isset($_POST['releve_sater'])) {
 								</td>
 							</tr>
 					
-							<tr class="tr_titre">
-								<td colspan="2" class="td_titre">
+							<tr>
+								<td colspan="2">
 									<b>Activation : </b>
 									<span class="variable_session"><?php echo $type_activation; ?></span>
 									<br />
 								</td>
 							</tr>
 					
-							<tr class="tr_titre">
-								<td colspan="2" class="td_titre">
+							<tr>
+								<td colspan="2">
 									<b>Localisation : </b>
 									<span class="variable_session"><?php echo $ville," ","(", $departement,")"; ?></span>
 								</td>
 							</tr>
 					
-							<tr class="tr_titre">
-								<td colspan="2" class="td_titre">
+							<tr>
+								<td colspan="2">
 									<b>Site d'implentation : </b>
 									<span class="variable_session"><?php echo $site_implentation; ?></span>
 								</td>
 							</tr>
 					
-							<tr class="tr_titre">
-								<td colspan="2" class="td_titre">
+							<tr>
+								<td colspan="2">
 									<div align="center">
 										<form method="POST">
 											<input type="submit" id="entrer_infos" name="entrer_infos" value="Renseigner">
@@ -145,14 +102,11 @@ elseif (isset($_POST['releve_sater'])) {
 								</td>
 							</tr>
 					
-							<tr class="tr_titre">
-								<td class="td_titre" colspan="2" style="background-color: orange;">
-									<div align="center">
-										<span style="font-size : 18px; color: blue;"><b>Membres</b></span></div>
-									</td>
-								</tr>
+							<tr>
+								<td colspan="2" class="titre">Membres</td>
+							</tr>
 					
-							<tr class="tr_titre">
+							<tr>
 								<td width="50%">
 									<div align="center">
 										<form method="POST">
@@ -169,14 +123,11 @@ elseif (isset($_POST['releve_sater'])) {
 								</td>
 							</tr>
 					
-							<tr class="tr_titre">
-								<td class="td_titre" colspan="2" style="background-color: orange;">
-									<div align="center">
-										<span style="font-size : 18px; color: blue;"><b>Membres Réseau</b></span></div>
-								</td>
+							<tr>
+								<td colspan="2" class="titre">Membres Réseau</td>
 							</tr>
 					
-							<tr class="tr_titre">
+							<tr>
 								<td width="50%">
 									<div align="center">
 										<form method="POST">
@@ -193,15 +144,11 @@ elseif (isset($_POST['releve_sater'])) {
 								</td>
 							</tr>
 					
-							<tr class="tr_titre">
-								<td class="td_titre" colspan="2" style="background-color: orange;">
-									<div align="center">
-										<span style="font-size : 18px; color: blue;"><b>Mains courantes</b></span>
-									</div>
-								</td>
+							<tr>
+								<td colspan="2" class="titre">Mains courantes</td>
 							</tr>
 					
-							<tr class="tr_titre">
+							<tr>
 								<td colspan="2">
 									<div align="center">
 										<form method="POST">
@@ -211,15 +158,11 @@ elseif (isset($_POST['releve_sater'])) {
 								</td>
 							</tr>
 					
-							<tr class="tr_titre">
-								<td class="td_titre" colspan="2" style="background-color: orange;">
-									<div align="center">
-										<span style="font-size : 18px; color: blue;"><b>Relevés</b></span>
-									</div>
-								</td>
+							<tr>
+								<td colspan="2" class="titre">Relevés</td>
 							</tr>
 							
-							<tr class="tr_titre">
+							<tr>
 								<td width="50%">
 									<div align="center">
 										<form method="POST">

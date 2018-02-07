@@ -1,3 +1,44 @@
+
+/****** Interface principale ******/
+.container_menu1{
+	margin: 10px;
+	margin-top: 25px;
+	position: absolute;
+	width: 32%;
+}
+
+.container_menu1 tr, .container_menu1 td {
+	width: 100%;
+}
+
+.container_menu2{
+	margin: 10px;
+	margin-top: 25px;
+	position: absolute;
+	width: 62%;
+}
+
+.aff_heure{
+	font-size: 18px;
+	position: absolute;
+	left: 110px;
+	top: 5px;
+	font-weight: bold;
+}
+.variable_session{
+	font-family: Courier;
+	font-type: monospace;
+}
+
+.membres{
+	display: inline;
+}
+
+
+
+
+/********************************/
+
 .table1
 {
     border-collapse: collapse;
@@ -16,6 +57,8 @@
 	font-weight: bold; 
 	font-size: 18px;
 }
+
+/******* Priorites pour les tables de main courante *******/
 
 .prio_routine {
 	width: 100%;
