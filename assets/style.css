@@ -38,6 +38,36 @@
 
 
 /********************************/
+.formfield, .formfield tr {
+	width: 100%;
+}
+
+.formfield td:first-child {
+	width: 30%;
+}
+
+.formfield td:nth-child(2) {
+	width: 70%;
+}
+
+.formfield input[type='text'] {
+	width: 200px;
+	background-color: white;
+}
+
+.formfield input.fielderror {
+	background-color: bisque;
+}
+
+.formfield input[type='submit'] {
+	margin-top: 10px;
+}
+
+.td_submit {
+	text-align: center;
+}
+
+/********************************/
 
 .table1
 {
