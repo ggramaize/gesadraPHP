@@ -33,52 +33,82 @@ if (isset($_POST['valider'])) {
  ?>
 
 <html>
-<head>
+	<head>
 		<title>Informations de session</title>
 		<meta charset="UTF-8">
-		<?php echo $script; ?>
+		<link rel="stylesheet" type="text/css" href="assets/style.css">
+		<?php echo( $script); ?>
 	</head>
-<body>
-	<form method="POST" action="session.php">
-		<!--<div align="center"><span style="background: orange; font-size : 18px; color: blue;"><b>Informations de session</b></span></br></div>
-		Nom de session :
-		<input type="text" name="nom_session" id="nom_session"></br>-->
-		<table width="100%">
-			<tr width="100%"><td width="15%">
-		Type d'activation :</td><td width="85%">
-		<select name="activation">
-			<option value="Exercice">Exercice</option>
-			<option value="Reelle">Relle</option>
-		</select></td></tr>
-	<tr width="100%"><td colspan="2" style="background-color: orange; color: blue;">
-<div align="center"><span style="background: orange; font-size : 18px; color: blue;"><b>Station locale</b></span></br></div>
-		</td></tr>
-		<tr width="100%"><td width="20%">
-		<label for="indicatif">Indicatif de la station :</label></td><td width="80%">
-		<input type="text" name="indicatif" id="indicatif" placeholder="Indicatif de la station"></td></tr>
-
-		<tr width="100%"><td width="20%">
-		Ville :</td><td width="80%">
-		<input type="text" name="ville" id="ville" placeholder ="Ville"></td></tr>
-
-		<tr width="100%"><td width="20%">
-		Département :</td><td width="80%">
-		<input type="text" name="departement" id="departement" placeholder="Departement"></td></tr>
-
-		<tr width="100%"><td width="20%">
-		Service :</td><td width="80%">
-		<input type="text" name="service" id="service" placeholder="Service"></td></tr>
-
-		<tr width="100%"><td width="20%">
-		Site d'implentation :</td><td width="80%">
-		<input type="text" name="site_implentation" id="site_implentation" placeholder="Site d'implentation"></td></tr>
-
-		<tr width="100%"><td colspan="2">
-		<div align="center">
-			<input type="submit" id="valider" name="valider" value="Valider"></td></tr>
-</table>
-		</div>
-	</table>
-	</form>
-</body>
+	<body>
+		<form method="POST" action="session.php">
+			<table class="formfield">
+				<tr>
+					<td colspan="2" class="titre">Informations de session</td>
+				</tr>
+				<!--
+				<tr>
+					<td>Nom de session</td>
+					<td>
+						<input type="text" name="nom_session" id="nom_session">
+						
+					</td>
+				</tr>
+				-->
+				<tr>
+					<td>Type d'activation :</td>
+					<td>
+						<select name="activation">
+							<option value="Exercice">Exercice</option>
+							<option value="Reelle">Relle</option>
+						</select>
+					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="2" class="titre">Station locale</td>
+				</tr>
+	
+				<tr>
+					<td><label for="indicatif">Indicatif de la station :</label></td>
+					<td>
+						<input type="text" name="indicatif" id="indicatif" placeholder="Indicatif de la station">
+					</td>
+				</tr>
+		
+				<tr>
+					<td>Ville :</td>
+					<td>
+						<input type="text" name="ville" id="ville" placeholder ="Ville">
+					</td>
+				</tr>
+		
+				<tr>
+					<td>Département :</td>
+					<td>
+						<input type="text" name="departement" id="departement" placeholder="Departement">
+					</td>
+				</tr>
+		
+				<tr>
+					<td>Service :</td>
+					<td>
+						<input type="text" name="service" id="service" placeholder="Service">
+					</td>
+				</tr>
+		
+				<tr>
+					<td>Site d'implentation :</td>
+					<td>
+						<input type="text" name="site_implentation" id="site_implentation" placeholder="Site d'implentation">
+					</td>
+				</tr>
+		
+				<tr>
+					<td colspan="2" class="td_submit">
+						<input type="submit" id="valider" name="valider" value="Valider">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
 </html>
