@@ -36,6 +36,25 @@ function editMembre($bdd, $nom_membre, $prenom_membre, $indicatif_membre, $tel_f
         ));
 }
 
+function editMembreSiExiste( $rangForm)
+{
+	if (isset($_POST["$rang"])) {
+		$d = $rang;
+		$nom_membre = ($_POST["nom_$rang"]);
+		$prenom_membre = ($_POST["prenom_$rang"]);
+		$indicatif_membre = ($_POST["indicatif_$rang"]);
+		$tel_fixe_perso = ($_POST["fixe_perso_$rang"]);
+		$tel_portable_perso = ($_POST["port_perso_$rang"]);
+		$mail_perso = ($_POST["mail_perso_$rang"]);
+		$tel_fixe_pro = ($_POST["fixe_pro_$rang"]);
+		$tel_portable_pro = ($_POST["port_pro_$rang"]);
+		$mail_pro = ($_POST["mail_pro_$rang"]);
+
+		editMembre($bdd, $nom_membre, $prenom_membre, $indicatif_membre, $tel_fixe_perso, $tel_portable_perso, $mail_perso, $tel_fixe_pro, $tel_portable_pro, $mail_pro, $d);
+	}
+}
+
+
 function nouveauMembre($bdd, $nom_membre, $prenom_membre, $indicatif_membre, $tel_fixe_perso, $tel_portable_perso, $mail_perso, $tel_fixe_pro, $tel_portable_pro, $mail_pro){
 
 	$req_nouveau_membre = $bdd->prepare('INSERT INTO membres(nom_membre, prenom_membre, indicatif_membre, tel_fixe_perso, tel_portable_perso, mail_perso, tel_fixe_pro, tel_portable_pro, mail_pro) VALUES(:nom_membre, :prenom_membre, :indicatif_membre, :tel_fixe_perso, :tel_portable_perso, :mail_perso, :tel_fixe_pro, :tel_portable_pro, :mail_pro)')or die(print_r($bdd->errorInfo()));
@@ -63,6 +82,22 @@ function editMembreReseau($bdd, $indicatif, $alias_tactique, $operateur, $etat, 
                 'commentaire' => $commentaire
                 ));
 }
+
+function editMembreReseauSiExiste( $rang) {
+
+	if (isset($_POST["$rang"])) {
+		$d = $rang;
+		$indicatif = ($_POST["indicatif_$rang"]);
+		$alias_tactique = ($_POST["alias_$rang"]);
+		$operateur = ($_POST["operateur_$rang"]);
+		$etat = ($_POST["etat_$rang"]);
+		
+		$commentaire = ($_POST["commentaire_$rang"]);
+
+		editMembreReseau($bdd, $indicatif, $alias_tactique, $operateur, $etat, $commentaire, $d);
+	}
+}
+
 
 function nouveauMembreReseau($bdd, $indicatif, $alias_tactique, $operateur, $etat, $commentaire){
     $req_nouveau_membre_reseau = $bdd->prepare('INSERT INTO membres_reseau (indicatif, alias_tactique, operateur, etat, commentaire) VALUES(:indicatif, :alias_tactique, :operateur, :etat, :commentaire)')or die(print_r($bdd->errorInfo()));

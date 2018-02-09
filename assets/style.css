@@ -1,0 +1,126 @@
+
+/****** Interface principale ******/
+.container_menu1{
+	margin: 10px;
+	margin-top: 25px;
+	position: absolute;
+	width: 32%;
+}
+
+.container_menu1 tr, .container_menu1 td {
+	width: 100%;
+}
+
+.container_menu2{
+	margin: 10px;
+	margin-top: 25px;
+	position: absolute;
+	width: 62%;
+}
+
+.aff_heure{
+	font-size: 18px;
+	position: absolute;
+	left: 110px;
+	top: 5px;
+	font-weight: bold;
+}
+.variable_session{
+	font-family: Courier;
+	font-type: monospace;
+}
+
+.membres{
+	display: inline;
+}
+
+
+
+
+/********************************/
+.formfield, .formfield tr {
+	width: 100%;
+}
+
+.formfield td:first-child {
+	width: 30%;
+}
+
+.formfield td:nth-child(2) {
+	width: 70%;
+}
+
+.formfield input[type='text'] {
+	width: 200px;
+	background-color: white;
+}
+
+.formfield input.fielderror {
+	background-color: bisque;
+}
+
+.formfield input[type='submit'] {
+	margin-top: 10px;
+}
+
+.td_submit {
+	text-align: center;
+}
+
+/********************************/
+
+.table1 {
+    border-collapse: collapse;
+}
+
+.td1, .th1, .table1 th {
+    border: 1px solid black;
+}
+
+
+.titre {
+	background-color: orange;
+	color: blue;
+	text-align: center;
+	font-weight: bold; 
+	font-size: 18px;
+}
+
+/******* Priorites pour les tables de main courante *******/
+
+.prio_routine {
+	width: 100%;
+	color: black;
+	background-color: white;
+}
+
+.prio_urgent {
+	width: 100%;
+	color: blue;
+	background-color: white;
+}
+
+.prio_immediat {
+	width: 100%;
+	color: tomato;
+	background-color: white;
+}
+
+.prio_flash {
+	width: 100%;
+	color: red;
+	background-color: white;
+}
+
+.prio_sauvetage {
+	width: 100%;
+	color: black;
+	background-color: darksalmon;
+}
+
+.prio_absolue {
+	width: 100%;
+	color: black;
+	background-color: orangered;
+}
+
