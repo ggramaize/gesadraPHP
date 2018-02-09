@@ -16,16 +16,7 @@ catch(Exception $e)
 <head>
 		<title>Liste des membres réseau</title>
 		<meta charset="UTF-8">
-<style type="text/css">
-.table1
-{
-    border-collapse: collapse;
-}
-.td1, .th1
-{
-    border: 1px solid black;
-}
-</style>
+		<link rel="stylesheet" type="text/css" href="assets/style.css">
 <script type="text/javascript">
 function edition()
     {
@@ -49,12 +40,12 @@ function edition()
 		<table class="table1" width="130%">
 			<thead>
 				<tr>
-					<th class="th1">ID</th>
-					<th class="th1">Indicatif</th>
-					<th class="th1">Alias tactique</th>
-					<th class="th1">Opérateur</th>
-					<th class="th1">Etat</th>
-					<th class="th1">Commentaire</th>
+					<th>ID</th>
+					<th>Indicatif</th>
+					<th>Alias tactique</th>
+					<th>Opérateur</th>
+					<th>Etat</th>
+					<th>Commentaire</th>
 				</tr>
 			</thead>
 			<tr>

@@ -49,17 +49,17 @@ for( $i=1; $i<51; ++$i) {
 			<table class="table1" width="180%">
 				<form method="POST">
 					<tr>
-						<th class="th1">ID</th>
-						<th class="th1">NOM</th>
-						<th class="th1">Prénom</th>
-						<th class="th1">Indicatif</th>
-						<th class="th1">Tel fixe Perso</th>
-						<th class="th1">Tel Port Perso</th>
-						<th class="th1">Mail Perso</th>
-						<th class="th1">Tel fixe Pro</th>
-						<th class="th1">Tel Port Pro</th>
-						<th class="th1">Mail Pro</th>
-						<th class="th1">XXXX</th>
+						<th>ID</th>
+						<th>NOM</th>
+						<th>Prénom</th>
+						<th>Indicatif</th>
+						<th>Tel fixe Perso</th>
+						<th>Tel Port Perso</th>
+						<th>Mail Perso</th>
+						<th>Tel fixe Pro</th>
+						<th>Tel Port Pro</th>
+						<th>Mail Pro</th>
+						<th>XXXX</th>
 					</tr>
 <?php $sql = "SELECT id, nom_membre, prenom_membre, indicatif_membre, tel_fixe_perso, tel_portable_perso, mail_perso, tel_fixe_pro, tel_portable_pro, mail_pro FROM membres";
 if ($res = $bdd->query($sql)) {

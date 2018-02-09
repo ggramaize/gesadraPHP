@@ -248,12 +248,12 @@ if (isset($_POST['valider'])) {
 								<a href="impression_main_courante.php" onclick="edition();return false;">Imprimer la liste</a>
 							</tr>
 							<tr>
-								<th class="th1">Date/Heure</th>
-								<th class="th1">De...</th>
-								<th class="th1">À...</th>
-								<th class="th1">Degré d'urgence</th>
-								<th class="th1">Mode de trans.</th>
-								<th class="th1">Message</th>
+								<th>Date/Heure</th>
+								<th>De...</th>
+								<th>À...</th>
+								<th>Degré d'urgence</th>
+								<th>Mode de trans.</th>
+								<th>Message</th>
 							</tr>
 <?php
 $sql = "SELECT date_heure, recu_de, emis_vers, degre_urgence, mode_transmission, message FROM main_courante ORDER BY `date_heure` DESC";

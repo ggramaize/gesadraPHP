@@ -16,16 +16,7 @@ catch(Exception $e)
 <head>
 	<title>Edition des membres</title>
 	<meta charset="UTF-8" />
-	<style type="text/css">
-		.table1
-		{
-		    border-collapse: collapse;
-		}
-		.td1, .th1
-		{
-		    border: 1px solid black;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
 
 	<script type="text/javascript">
 	function edition()
@@ -48,16 +39,16 @@ catch(Exception $e)
 		<table class="table1" width="180%">
 			<thead>
 				<tr>
-					<th class="th1">ID</th>
-					<th class="th1">NOM</th>
-					<th class="th1">Prénom</th>
-					<th class="th1">Indicatif</th>
-					<th class="th1">Tel fixe Perso</th>
-					<th class="th1">Tel Port Perso</th>
-					<th class="th1">Mail Perso</th>
-					<th class="th1">Tel fixe Pro</th>
-					<th class="th1">Tel Port Pro</th>
-					<th class="th1">Mail Pro</th>
+					<th>ID</th>
+					<th>NOM</th>
+					<th>Prénom</th>
+					<th>Indicatif</th>
+					<th>Tel fixe Perso</th>
+					<th>Tel Port Perso</th>
+					<th>Mail Perso</th>
+					<th>Tel fixe Pro</th>
+					<th>Tel Port Pro</th>
+					<th>Mail Pro</th>
 				</tr>
 			</thead>
 			<tr>

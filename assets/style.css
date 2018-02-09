@@ -69,13 +69,11 @@
 
 /********************************/
 
-.table1
-{
+.table1 {
     border-collapse: collapse;
 }
 
-.td1, .th1
-{
+.td1, .th1, .table1 th {
     border: 1px solid black;
 }
 

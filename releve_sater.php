@@ -50,7 +50,7 @@ if (isset($_POST['valider'])) {
 <head>
 		<title>Relevé SATER</title>
 		<meta charset="UTF-8">
-
+		<link rel="stylesheet" type="text/css" href="assets/style.css">
 		<script type="text/javascript">
 function TD(n){
 
@@ -78,16 +78,6 @@ return d.getDate()+"/"+ Mois +"/"+d.getFullYear()+" "+TD(d.getHours())+":"+TD(d.
 
 
 </script>
-<style type="text/css">
-.table1
-{
-    border-collapse: collapse;
-}
-.td1, .th1
-{
-    border: 1px solid black;
-}
-</style>
 	</head>
 <body>
 	<form method="POST">
@@ -181,15 +171,15 @@ if ($res = $bdd->query($sql)) {
 			<table class="table1" width="150%">
         <thead>
           <tr>
-            <th class="th1">Date/Heure</th>
-            <th class="th1">Eméteur</th>
-            <th class="th1">Syst. Coor.</th>
-            <th class="th1">Datum</th>
-            <th class="th1">Latitude</th>
-            <th class="th1">Longitude</th>
-            <th class="th1">Direction</th>
-            <th class="th1">Signal</th>
-            <th class="th1">Commentaire</th>
+            <th>Date/Heure</th>
+            <th>Eméteur</th>
+            <th>Syst. Coor.</th>
+            <th>Datum</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Direction</th>
+            <th>Signal</th>
+            <th>Commentaire</th>
           </tr>
         </thead>
 		<?php

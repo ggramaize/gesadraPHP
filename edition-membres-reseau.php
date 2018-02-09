@@ -21,16 +21,7 @@ for( $i=1; $i<26; ++$i) {
 <head>
 		<title>Edition des membres réseau</title>
 		<meta charset="UTF-8">
-<style type="text/css">
-.table1
-{
-    border-collapse: collapse;
-}
-.td1, .th1
-{
-    border: 1px solid black;
-}
-</style>
+		<link rel="stylesheet" type="text/css" href="assets/style.css">
 	</head>
 <body>
 	
@@ -50,13 +41,13 @@ for( $i=1; $i<26; ++$i) {
 			<form method="POST">
       <thead>
       <tr>
-      <th class="th1">ID</th>
-      <th class="th1">Indicatif</th>
-      <th class="th1">Alias tactique</th>
-      <th class="th1">Opérateur</th>
-      <th class="th1">Etat</th>
-      <th class="th1">Commentaire</th>
-      <th class="th1">XXXX</th>
+      <th>ID</th>
+      <th>Indicatif</th>
+      <th>Alias tactique</th>
+      <th>Opérateur</th>
+      <th>Etat</th>
+      <th>Commentaire</th>
+      <th>XXXX</th>
       </tr>
       </thead>
 <?php $sql = "SELECT id, indicatif, alias_tactique, operateur, etat, commentaire FROM membres_reseau";
