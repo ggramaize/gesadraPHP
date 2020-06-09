@@ -1,10 +1,10 @@
 <?php 
 
 // Nom d'utilisateur du compte sur le serveur de BDD
-const DB_USERNAME = 'gesadra';
+const DB_USERNAME = 'root';
 
 // Mot de passe du compte sur le serveur de BDD
-const DB_PASSWORD = 'gesadra';
+const DB_PASSWORD = '';
 
 // Nom d'hote ou IP du serveur de BDD
 const DB_HOST = 'localhost';
