@@ -90,7 +90,7 @@ if ($res = $bdd->query($sql)) {
 					<tr>
 						<td>Date/Heure :</td>
 						<td>
-							<input type="text" <?php echo( $couleur_date_heure); ?> name="date_heure" id="date_heure" placeholder ="'.$placeholder_date_heure.'">
+							<input type="text" <?php echo( $couleur_date_heure); ?> name="date_heure" id="date_heure" placeholder ="<?php echo $placeholder_date_heure ?>">
 							<input id="button" type="button" value="Date et Heure actuelle" onclick="document.getElementById('date_heure').value = (DateLocale(new Date()))" />
 						</td>
 					</tr>
